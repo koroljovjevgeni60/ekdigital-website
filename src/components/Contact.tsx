@@ -1,11 +1,15 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, XCircle, X, Loader2 } from 'lucide-react';
 import styles from './Contact.module.css';
 
 export default function Contact() {
   const t = useTranslations('contact');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [modal, setModal] = useState<{ show: boolean; success: boolean }>({ show: false, success: false });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const contactInfo = [
     {
@@ -34,6 +38,32 @@ export default function Contact() {
     },
   ];
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setModal({ show: true, success: true });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setModal({ show: true, success: false });
+      }
+    } catch {
+      setModal({ show: true, success: false });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const closeModal = () => setModal({ show: false, success: false });
+
   return (
     <section id="contact" className={`section ${styles.contact}`}>
       <div className={styles.backgroundEffect}></div>
@@ -44,7 +74,7 @@ export default function Contact() {
         <div className={styles.grid}>
           {/* Contact Form */}
           <div className={styles.formContainer}>
-            <form className={styles.form}>
+            <form className={styles.form} onSubmit={handleSubmit}>
               <div className={styles.formGroup}>
                 <label htmlFor="name" className={styles.label}>{t('name')}</label>
                 <input
@@ -53,6 +83,8 @@ export default function Contact() {
                   name="name"
                   className={styles.input}
                   placeholder={t('namePlaceholder')}
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
                 />
               </div>
@@ -65,6 +97,8 @@ export default function Contact() {
                   name="email"
                   className={styles.input}
                   placeholder={t('emailPlaceholder')}
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
                 />
               </div>
@@ -76,14 +110,29 @@ export default function Contact() {
                   name="message"
                   className={styles.textarea}
                   placeholder={t('messagePlaceholder')}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={5}
                   required
                 ></textarea>
               </div>
 
-              <button type="submit" className={`btn btn-primary ${styles.submitBtn}`}>
-                <Send size={18} />
-                {t('send')}
+              <button 
+                type="submit" 
+                className={`btn btn-primary ${styles.submitBtn}`}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 size={18} className={styles.spinner} />
+                    {t('sending')}
+                  </>
+                ) : (
+                  <>
+                    <Send size={18} />
+                    {t('send')}
+                  </>
+                )}
               </button>
             </form>
           </div>
@@ -134,7 +183,29 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Success/Error Modal */}
+      {modal.show && (
+        <div className={styles.modalOverlay} onClick={closeModal}>
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+            <button className={styles.modalClose} onClick={closeModal}>
+              <X size={24} />
+            </button>
+            <div className={`${styles.modalIcon} ${modal.success ? styles.success : styles.error}`}>
+              {modal.success ? <CheckCircle size={48} /> : <XCircle size={48} />}
+            </div>
+            <h3 className={styles.modalTitle}>
+              {modal.success ? t('successTitle') : t('errorTitle')}
+            </h3>
+            <p className={styles.modalMessage}>
+              {modal.success ? t('successMessage') : t('errorMessage')}
+            </p>
+            <button className={`btn btn-primary ${styles.modalBtn}`} onClick={closeModal}>
+              {t('close')}
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
-

@@ -75,6 +75,7 @@
     "email": "Correo Electrónico",
     "message": "Mensaje",
     "send": "Enviar Mensaje",
+    "sending": "Enviando...",
     "phone": "Teléfono",
     "address": "Dirección",
     "schedule": "Horario",
@@ -82,7 +83,12 @@
     "namePlaceholder": "Juan García",
     "emailPlaceholder": "juan@empresa.com",
     "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
-    "viewMap": "Ver mapa más grande"
+    "viewMap": "Ver mapa más grande",
+    "successTitle": "¡Mensaje Enviado!",
+    "successMessage": "Gracias por contactarnos. Te responderemos lo antes posible.",
+    "errorTitle": "Error",
+    "errorMessage": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo o contáctanos directamente en info@ekdigital.eu",
+    "close": "Cerrar"
   },
   "footer": {
     "company": "EK DIGITAL, SOCIEDAD LIMITADA",
