@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "title": "EK Digital - Software Development in Spain",
+    "description": "Custom software solutions for Spanish businesses. Web development, mobile applications and digital transformation."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transforming Ideas into Digital Solutions",
+    "subtitle": "Custom software development to drive your business in the digital era",
+    "cta": "Start Project",
+    "learnMore": "Learn More"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive technology solutions for your business",
+    "web": {
+      "title": "Web Development",
+      "description": "Modern websites, progressive web applications and e-commerce platforms optimized for performance and user experience."
+    },
+    "mobile": {
+      "title": "Mobile Applications",
+      "description": "Native and cross-platform apps for iOS and Android that connect with your customers wherever they are."
+    },
+    "cloud": {
+      "title": "Cloud Solutions",
+      "description": "Scalable and secure cloud infrastructure. Migration, optimization and cloud service management."
+    },
+    "consulting": {
+      "title": "Digital Consulting",
+      "description": "Strategic advice for your company's digital transformation. Analysis, planning and implementation."
+    },
+    "ai": {
+      "title": "Artificial Intelligence",
+      "description": "AI and machine learning integration to automate processes and gain valuable insights from your data."
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "description": "Continuous technical support, updates and improvements to keep your systems running optimally."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Software development experts in Barcelona",
+    "description1": "At EK Digital, we are a team of professionals passionate about technology and innovation. From Barcelona, we develop software solutions that transform the way businesses operate.",
+    "description2": "Our approach focuses on understanding each client's specific needs to offer customized solutions that generate real value and measurable results.",
+    "stats": {
+      "projects": "Completed Projects",
+      "clients": "Satisfied Clients",
+      "years": "Years of Experience",
+      "team": "Professionals"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "phone": "Phone",
+    "address": "Address",
+    "schedule": "Hours"
+  },
+  "footer": {
+    "company": "EK DIGITAL, SOCIEDAD LIMITADA",
+    "tagline": "Custom software development in Spain",
+    "description": "We are a software development company based in Barcelona, specializing in creating innovative digital solutions for businesses of all sizes.",
+    "address": "191 Calle Clot, Barcelona, 08027",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "cookies": "Cookie Policy",
+    "companyName": "Company Name",
+    "registeredAddress": "Registered Address",
+    "registration": "Commercial Registry",
+    "registrationInfo": "Registered in the Commercial Registry of Barcelona"
+  },
+  "cta": {
+    "title": "Ready to Digitize Your Business?",
+    "subtitle": "Contact us today and discover how we can help you achieve your goals",
+    "button": "Request Quote"
+  },
+  "cookies": {
+    "title": "We Use Cookies",
+    "description": "This website uses cookies to improve your browsing experience and analyze site traffic.",
+    "moreInfo": "For more information, please see our",
+    "cookiePolicy": "Cookie Policy",
+    "acceptAll": "Accept All",
+    "acceptEssential": "Essential Only"
+  },
+  "legal": {
+    "backHome": "Back to Home",
+    "lastUpdated": "Last updated"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "intro": "At EK DIGITAL, SOCIEDAD LIMITADA, we are committed to protecting your privacy. This policy describes how we collect, use, and protect your personal information.",
+    "section1Title": "1. Data Controller",
+    "section1Content": "EK DIGITAL, SOCIEDAD LIMITADA, located at 191 Calle Clot, Barcelona, 08027, Spain, is the controller of your personal data.",
+    "section2Title": "2. Data We Collect",
+    "section2Content": "We may collect the following types of information: name, email address, phone number, and any other information you voluntarily provide through our contact forms.",
+    "section3Title": "3. Purpose of Processing",
+    "section3Content": "We use your data to: respond to your inquiries, provide you with information about our services, manage the business relationship, and comply with our legal obligations.",
+    "section4Title": "4. Legal Basis",
+    "section4Content": "The processing of your data is based on your express consent, the execution of a contract, or compliance with legal obligations.",
+    "section5Title": "5. Data Retention",
+    "section5Content": "We will retain your data for as long as necessary to fulfill the purposes for which it was collected and to comply with our legal obligations.",
+    "section6Title": "6. Your Rights",
+    "section6Content": "You have the right to access, rectify, delete, limit processing, port your data, and object to processing. You can exercise these rights by contacting us at info@ekdigital.eu.",
+    "section7Title": "7. Contact",
+    "section7Content": "For any questions regarding this policy, you can contact us at info@ekdigital.eu or at our postal address."
+  },
+  "termsPage": {
+    "title": "Terms and Conditions",
+    "intro": "These terms and conditions govern the use of this website operated by EK DIGITAL, SOCIEDAD LIMITADA. By accessing this site, you accept these terms in full.",
+    "section1Title": "1. Company Information",
+    "section1Content": "This website is owned by EK DIGITAL, SOCIEDAD LIMITADA, with registered address at 191 Calle Clot, Barcelona, 08027, Spain.",
+    "section2Title": "2. Use of the Website",
+    "section2Content": "Access and use of this website is subject to the following terms. By using this site, you confirm that you accept these terms and agree to comply with them.",
+    "section3Title": "3. Intellectual Property",
+    "section3Content": "All content on this website, including texts, graphics, logos, images, and software, is the property of EK DIGITAL or its licensors and is protected by intellectual property laws.",
+    "section4Title": "4. Limitation of Liability",
+    "section4Content": "EK DIGITAL shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use this website.",
+    "section5Title": "5. External Links",
+    "section5Content": "This site may contain links to third-party websites. We have no control over the content of these sites and assume no responsibility for them.",
+    "section6Title": "6. Modifications",
+    "section6Content": "We reserve the right to modify these terms at any time. Modifications will take effect upon publication on this website.",
+    "section7Title": "7. Applicable Law",
+    "section7Content": "These terms are governed by the laws of Spain. Any dispute shall be submitted to the jurisdiction of the courts of Barcelona."
+  },
+  "cookiesPage": {
+    "title": "Cookie Policy",
+    "intro": "This cookie policy explains what cookies are, how we use them, and your choices regarding their use.",
+    "section1Title": "1. What Are Cookies?",
+    "section1Content": "Cookies are small text files that are stored on your device when you visit a website. They are widely used to make websites work more efficiently and provide information to site owners.",
+    "section2Title": "2. Cookies We Use",
+    "section2Content": "We use the following types of cookies: essential cookies (necessary for site operation), performance cookies (help us understand how visitors interact with the site), and functionality cookies (remember your preferences).",
+    "section3Title": "3. Essential Cookies",
+    "section3Content": "These cookies are necessary for the website to function properly. They include cookies that allow you to navigate the site and use its features.",
+    "section4Title": "4. Analytics Cookies",
+    "section4Content": "We use analytics tools to understand how visitors use our site. This information helps us improve our website and your browsing experience.",
+    "section5Title": "5. Managing Cookies",
+    "section5Content": "You can control and manage cookies through your browser settings. Please note that disabling certain cookies may affect the functionality of this website.",
+    "section6Title": "6. More Information",
+    "section6Content": "For more information about how we manage your privacy, please see our Privacy Policy or contact us at info@ekdigital.eu."
+  }
+}
