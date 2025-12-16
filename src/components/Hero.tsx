@@ -81,7 +81,7 @@ export default function Hero() {
                   <span className={styles.keyword}>await</span>{' '}
                   <span className={styles.function}>createDigital</span>({'\n'}
                   {'  '}<span className={styles.property}>innovation</span>: <span className={styles.boolean}>true</span>,{'\n'}
-                  {'  '}<span className={styles.property}>quality</span>: <span className={styles.string}>"excellence"</span>,{'\n'}
+                  {'  '}<span className={styles.property}>quality</span>: <span className={styles.string}>&quot;excellence&quot;</span>,{'\n'}
                   {'  '}<span className={styles.property}>passion</span>: <span className={styles.number}>100</span>{'\n'}
                   );
                 </code>
