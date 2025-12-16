@@ -10,7 +10,10 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Transforming Ideas into Digital Solutions",
+    "titlePart1": "Transforming",
+    "titleHighlight1": "Ideas",
+    "titlePart2": "into Digital",
+    "titleHighlight2": "Solutions",
     "subtitle": "Custom software development to drive your business in the digital era",
     "cta": "Start Project",
     "learnMore": "Learn More",

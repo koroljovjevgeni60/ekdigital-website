@@ -22,15 +22,14 @@ export default function Hero() {
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            {t('title').split(' ').map((word, index) => (
-              <span 
-                key={index} 
-                className={index === 1 || index === 4 ? styles.highlight : ''}
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {word}{' '}
-              </span>
-            ))}
+            <span className={styles.titleLine}>
+              {t('titlePart1')}{' '}
+              <span className={styles.highlight}>{t('titleHighlight1')}</span>
+            </span>
+            <span className={styles.titleLine}>
+              {t('titlePart2')}{' '}
+              <span className={styles.highlight}>{t('titleHighlight2')}</span>
+            </span>
           </h1>
 
           <p className={styles.subtitle}>{t('subtitle')}</p>

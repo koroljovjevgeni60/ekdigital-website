@@ -10,7 +10,10 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Transformamos Ideas en Soluciones Digitales",
+    "titlePart1": "Transformamos",
+    "titleHighlight1": "Ideas",
+    "titlePart2": "en Soluciones",
+    "titleHighlight2": "Digitales",
     "subtitle": "Desarrollo de software a medida para impulsar tu negocio en la era digital",
     "cta": "Comenzar Proyecto",
     "learnMore": "Conocer Más",
