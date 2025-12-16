@@ -13,7 +13,12 @@
     "title": "Transformamos Ideas en Soluciones Digitales",
     "subtitle": "Desarrollo de software a medida para impulsar tu negocio en la era digital",
     "cta": "Comenzar Proyecto",
-    "learnMore": "Conocer Más"
+    "learnMore": "Conocer Más",
+    "stats": {
+      "projects": "Proyectos",
+      "satisfaction": "Satisfacción",
+      "years": "Años"
+    }
   },
   "services": {
     "title": "Nuestros Servicios",
@@ -53,6 +58,14 @@
       "clients": "Clientes Satisfechos",
       "years": "Años de Experiencia",
       "team": "Profesionales"
+    },
+    "features": {
+      "agile": "Desarrollo ágil y entregas iterativas",
+      "clean": "Código limpio y bien documentado",
+      "support": "Soporte técnico continuo",
+      "communication": "Comunicación transparente",
+      "modern": "Tecnologías modernas",
+      "scalable": "Soluciones escalables"
     }
   },
   "contact": {
@@ -64,7 +77,12 @@
     "send": "Enviar Mensaje",
     "phone": "Teléfono",
     "address": "Dirección",
-    "schedule": "Horario"
+    "schedule": "Horario",
+    "scheduleValue": "Lun - Vie: 9:00 - 18:00",
+    "namePlaceholder": "Juan García",
+    "emailPlaceholder": "juan@empresa.com",
+    "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+    "viewMap": "Ver mapa más grande"
   },
   "footer": {
     "company": "EK DIGITAL, SOCIEDAD LIMITADA",
@@ -78,7 +96,9 @@
     "companyName": "Razón Social",
     "registeredAddress": "Domicilio Social",
     "registration": "Registro Mercantil",
-    "registrationInfo": "Inscrita en el Registro Mercantil de Barcelona"
+    "registrationInfo": "Inscrita en el Registro Mercantil de Barcelona",
+    "links": "Enlaces",
+    "legal": "Legal"
   },
   "cta": {
     "title": "¿Listo para Digitalizar tu Negocio?",

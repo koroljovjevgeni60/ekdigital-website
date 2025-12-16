@@ -29,7 +29,7 @@ export default function Contact() {
     {
       icon: Clock,
       label: t('schedule'),
-      value: 'Lun - Vie: 9:00 - 18:00',
+      value: t('scheduleValue'),
       href: null,
     },
   ];
@@ -52,7 +52,7 @@ export default function Contact() {
                   id="name"
                   name="name"
                   className={styles.input}
-                  placeholder="Juan García"
+                  placeholder={t('namePlaceholder')}
                   required
                 />
               </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   className={styles.input}
-                  placeholder="juan@empresa.com"
+                  placeholder={t('emailPlaceholder')}
                   required
                 />
               </div>
@@ -75,7 +75,7 @@ export default function Contact() {
                   id="message"
                   name="message"
                   className={styles.textarea}
-                  placeholder="Cuéntanos sobre tu proyecto..."
+                  placeholder={t('messagePlaceholder')}
                   rows={5}
                   required
                 ></textarea>
@@ -128,7 +128,7 @@ export default function Contact() {
                 className={styles.mapLink}
               >
                 <MapPin size={16} />
-                Ver mapa más grande
+                {t('viewMap')}
               </a>
             </div>
           </div>

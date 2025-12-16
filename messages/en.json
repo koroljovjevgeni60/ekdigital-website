@@ -13,7 +13,12 @@
     "title": "Transforming Ideas into Digital Solutions",
     "subtitle": "Custom software development to drive your business in the digital era",
     "cta": "Start Project",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "stats": {
+      "projects": "Projects",
+      "satisfaction": "Satisfaction",
+      "years": "Years"
+    }
   },
   "services": {
     "title": "Our Services",
@@ -53,6 +58,14 @@
       "clients": "Satisfied Clients",
       "years": "Years of Experience",
       "team": "Professionals"
+    },
+    "features": {
+      "agile": "Agile development and iterative deliveries",
+      "clean": "Clean and well-documented code",
+      "support": "Continuous technical support",
+      "communication": "Transparent communication",
+      "modern": "Modern technologies",
+      "scalable": "Scalable solutions"
     }
   },
   "contact": {
@@ -64,7 +77,12 @@
     "send": "Send Message",
     "phone": "Phone",
     "address": "Address",
-    "schedule": "Hours"
+    "schedule": "Hours",
+    "scheduleValue": "Mon - Fri: 9:00 - 18:00",
+    "namePlaceholder": "John Smith",
+    "emailPlaceholder": "john@company.com",
+    "messagePlaceholder": "Tell us about your project...",
+    "viewMap": "View larger map"
   },
   "footer": {
     "company": "EK DIGITAL, SOCIEDAD LIMITADA",
@@ -78,7 +96,9 @@
     "companyName": "Company Name",
     "registeredAddress": "Registered Address",
     "registration": "Commercial Registry",
-    "registrationInfo": "Registered in the Commercial Registry of Barcelona"
+    "registrationInfo": "Registered in the Commercial Registry of Barcelona",
+    "links": "Links",
+    "legal": "Legal"
   },
   "cta": {
     "title": "Ready to Digitize Your Business?",

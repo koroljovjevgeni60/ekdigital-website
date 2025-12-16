@@ -28,7 +28,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className={styles.column}>
-            <h4 className={styles.columnTitle}>Links</h4>
+            <h4 className={styles.columnTitle}>{t('links')}</h4>
             <nav className={styles.links}>
               <Link href="/" className={styles.link}>{tNav('home')}</Link>
               <a href="#services" className={styles.link}>{tNav('services')}</a>
@@ -62,7 +62,7 @@ export default function Footer() {
 
           {/* Legal */}
           <div className={styles.column}>
-            <h4 className={styles.columnTitle}>Legal</h4>
+            <h4 className={styles.columnTitle}>{t('legal')}</h4>
             <nav className={styles.links}>
               <Link href="/privacy" className={styles.link}>{t('privacy')}</Link>
               <Link href="/terms" className={styles.link}>{t('terms')}</Link>

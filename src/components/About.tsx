@@ -14,14 +14,7 @@ export default function About() {
     { key: 'team', value: '10+', icon: Zap },
   ];
 
-  const features = [
-    'Desarrollo ágil y entregas iterativas',
-    'Código limpio y bien documentado',
-    'Soporte técnico continuo',
-    'Comunicación transparente',
-    'Tecnologías modernas',
-    'Soluciones escalables',
-  ];
+  const featureKeys = ['agile', 'clean', 'support', 'communication', 'modern', 'scalable'];
 
   return (
     <section id="about" className={`section ${styles.about}`}>
@@ -36,10 +29,10 @@ export default function About() {
             <p className={styles.description}>{t('description2')}</p>
 
             <ul className={styles.features}>
-              {features.map((feature, index) => (
-                <li key={index} className={styles.feature}>
+              {featureKeys.map((key) => (
+                <li key={key} className={styles.feature}>
                   <CheckCircle2 size={20} className={styles.featureIcon} />
-                  <span>{feature}</span>
+                  <span>{t(`features.${key}`)}</span>
                 </li>
               ))}
             </ul>
