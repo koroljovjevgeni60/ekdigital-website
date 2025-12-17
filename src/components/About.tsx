@@ -55,21 +55,6 @@ export default function About() {
               ))}
             </div>
             
-            <div className={styles.imageContainer}>
-              <div className={styles.imagePlaceholder}>
-                <div className={styles.imageOverlay}>
-                  <span className={styles.logoMark}>EK</span>
-                </div>
-                <div className={styles.cityscape}>
-                  <div className={styles.building} style={{ height: '60%', left: '10%' }}></div>
-                  <div className={styles.building} style={{ height: '80%', left: '25%' }}></div>
-                  <div className={styles.building} style={{ height: '50%', left: '40%' }}></div>
-                  <div className={styles.building} style={{ height: '90%', left: '55%' }}></div>
-                  <div className={styles.building} style={{ height: '70%', left: '70%' }}></div>
-                  <div className={styles.building} style={{ height: '55%', left: '85%' }}></div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
