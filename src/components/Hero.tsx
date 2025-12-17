@@ -20,11 +20,11 @@ export default function Hero() {
         <div className={styles.content}>
           <h1 className={styles.title}>
             <span className={styles.titleLine}>
-              {t('titlePart1')}{' '}
+              {t('titlePart1')}<br />
               <span className={styles.highlight}>{t('titleHighlight1')}</span>
             </span>
             <span className={styles.titleLine}>
-              {t('titlePart2')}{' '}
+              {t('titlePart2')}<br />
               <span className={styles.highlight}>{t('titleHighlight2')}</span>
             </span>
           </h1>
