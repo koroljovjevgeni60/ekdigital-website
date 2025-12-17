@@ -9,10 +9,11 @@
 }
 
 .header.scrolled {
-  background: rgba(10, 10, 15, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--color-gray-200);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .container {
@@ -27,7 +28,7 @@
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-dark);
 }
 
 .logoIcon {
@@ -36,12 +37,13 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+  background: var(--color-accent);
   border-radius: var(--radius-sm);
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.125rem;
   letter-spacing: -0.05em;
+  color: var(--color-white);
 }
 
 .logoText {
@@ -60,7 +62,7 @@
 .navLink {
   font-size: 0.9375rem;
   font-weight: 500;
-  color: var(--color-gray-400);
+  color: var(--color-gray-600);
   text-decoration: none;
   transition: color var(--transition-fast);
   position: relative;
@@ -78,7 +80,7 @@
 }
 
 .navLink:hover {
-  color: var(--color-white);
+  color: var(--color-accent);
 }
 
 .navLink:hover::after {
@@ -111,14 +113,14 @@
 }
 
 .langDivider {
-  color: var(--color-gray-700);
+  color: var(--color-gray-300);
 }
 
 .menuToggle {
   display: none;
   background: none;
   border: none;
-  color: var(--color-white);
+  color: var(--color-dark);
   cursor: pointer;
   padding: 0.5rem;
 }
@@ -133,7 +135,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    background: var(--color-primary);
+    background: var(--color-white);
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition-base);
@@ -146,6 +148,7 @@
 
   .navLink {
     font-size: 1.5rem;
+    color: var(--color-dark);
   }
 
   .menuToggle {

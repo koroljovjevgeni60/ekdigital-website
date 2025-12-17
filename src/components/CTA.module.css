@@ -12,18 +12,11 @@
 }
 
 .gradient {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(245, 158, 11, 0.1) 100%);
+  display: none;
 }
 
 .pattern {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+  display: none;
 }
 
 .container {
@@ -41,11 +34,10 @@
   justify-content: center;
   width: 72px;
   height: 72px;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+  background: var(--color-accent);
   border-radius: var(--radius-md);
   color: var(--color-white);
   margin-bottom: 2rem;
-  animation: float 4s ease-in-out infinite;
 }
 
 .title {
@@ -56,7 +48,7 @@
 
 .subtitle {
   font-size: 1.125rem;
-  color: var(--color-gray-400);
+  color: var(--color-gray-600);
   margin-bottom: 2rem;
   max-width: 500px;
 }

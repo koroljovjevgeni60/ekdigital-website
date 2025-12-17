@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Brand Colors - Deep blue with warm golden accents */
-  --color-primary: #0a0a14;
-  --color-secondary: #101828;
+  /* Brand Colors - Clean light theme */
+  --color-primary: #ffffff;
+  --color-secondary: #f8fafc;
   --color-accent: #2563eb;
   --color-accent-light: #3b82f6;
-  --color-highlight: #f59e0b;
-  --color-gold: #fbbf24;
+  --color-highlight: #0ea5e9;
+  --color-dark: #0f172a;
+  --color-success: #10b981;
   
   /* Neutrals */
   --color-white: #ffffff;
-  --color-gray-100: #f8f9fa;
-  --color-gray-200: #e9ecef;
-  --color-gray-300: #dee2e6;
-  --color-gray-400: #ced4da;
-  --color-gray-500: #adb5bd;
-  --color-gray-600: #6c757d;
-  --color-gray-700: #495057;
-  --color-gray-800: #343a40;
-  --color-gray-900: #212529;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
   
   /* Typography */
   --font-display: 'Syne', sans-serif;
@@ -54,21 +55,14 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-dark);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 /* Background patterns */
-.bg-grid {
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
 .bg-gradient-radial {
-  background: radial-gradient(ellipse at 50% 0%, rgba(37, 99, 235, 0.15) 0%, transparent 60%);
+  display: none;
 }
 
 /* Container */
@@ -101,7 +95,7 @@ h3 {
 
 p {
   font-size: 1.125rem;
-  color: var(--color-gray-400);
+  color: var(--color-gray-600);
 }
 
 /* Buttons */
@@ -122,20 +116,21 @@ p {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+  background: var(--color-accent);
   color: var(--color-white);
-  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
 }
 
 .btn-primary:hover {
+  background: var(--color-accent-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--color-white);
-  border: 2px solid var(--color-gray-600);
+  color: var(--color-dark);
+  border: 2px solid var(--color-gray-300);
 }
 
 .btn-secondary:hover {
@@ -171,26 +166,22 @@ p {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--color-accent), var(--color-highlight));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-accent);
 }
 
 /* Cards */
 .card {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
   border-radius: var(--radius-lg);
   padding: 2rem;
   transition: all var(--transition-base);
-  backdrop-filter: blur(10px);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  border-color: rgba(37, 99, 235, 0.3);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--color-accent);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 /* Animations */
@@ -257,11 +248,11 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-primary);
+  background: var(--color-gray-100);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-gray-700);
+  background: var(--color-gray-300);
   border-radius: 5px;
 }
 

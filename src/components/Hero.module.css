@@ -14,47 +14,23 @@
 }
 
 .gradient {
-  position: absolute;
-  top: -50%;
-  left: -20%;
-  width: 80%;
-  height: 100%;
-  background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.12) 0%, transparent 60%);
-  filter: blur(60px);
+  display: none;
 }
 
 .grid {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 80px 80px;
-  mask-image: radial-gradient(ellipse at center, black 0%, transparent 80%);
+  display: none;
 }
 
 .orb1 {
-  position: absolute;
-  top: 20%;
-  right: 10%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
-  filter: blur(40px);
-  animation: float 8s ease-in-out infinite;
+  display: none;
 }
 
 .orb2 {
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
-  filter: blur(40px);
-  animation: float 6s ease-in-out infinite reverse;
+  display: none;
+}
+
+.orb3 {
+  display: none;
 }
 
 .floatingCode {
@@ -85,6 +61,7 @@
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.03em;
+  color: var(--color-dark);
   opacity: 0;
   animation: fadeInUp 0.6s ease forwards;
 }
@@ -94,15 +71,12 @@
 }
 
 .highlight {
-  background: linear-gradient(135deg, var(--color-accent), var(--color-highlight));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-accent);
 }
 
 .subtitle {
   font-size: 1.25rem;
-  color: var(--color-gray-400);
+  color: var(--color-gray-600);
   max-width: 500px;
   line-height: 1.7;
   opacity: 0;
@@ -133,7 +107,7 @@
   gap: 2rem;
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--color-gray-200);
   opacity: 0;
   animation: fadeInUp 0.6s ease forwards;
   animation-delay: 0.7s;
@@ -149,7 +123,7 @@
   font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-dark);
 }
 
 .statLabel {
@@ -160,7 +134,7 @@
 .statDivider {
   width: 1px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--color-gray-200);
 }
 
 .visual {
@@ -172,21 +146,19 @@
 }
 
 .codeCard {
-  background: linear-gradient(145deg, rgba(26, 26, 46, 0.9), rgba(10, 10, 15, 0.9));
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
   border-radius: var(--radius-lg);
   overflow: hidden;
   width: 100%;
   max-width: 480px;
-  box-shadow: 
-    0 20px 60px rgba(0, 0, 0, 0.5),
-    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
-  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
-  transition: transform var(--transition-base);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-base);
 }
 
 .codeCard:hover {
-  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
 }
 
 .cardHeader {
@@ -194,8 +166,8 @@
   align-items: center;
   gap: 1rem;
   padding: 0.875rem 1.25rem;
-  background: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--color-gray-100);
+  border-bottom: 1px solid var(--color-gray-200);
 }
 
 .dots {
@@ -229,6 +201,7 @@
 
 .cardBody {
   padding: 1.5rem;
+  background: var(--color-white);
 }
 
 .code {
@@ -237,34 +210,35 @@
   line-height: 1.8;
   margin: 0;
   white-space: pre-wrap;
+  color: var(--color-gray-700);
 }
 
 .keyword {
-  color: #c678dd;
+  color: #8b5cf6;
 }
 
 .variable {
-  color: #e06c75;
+  color: #dc2626;
 }
 
 .function {
-  color: #61afef;
+  color: #2563eb;
 }
 
 .property {
-  color: #e5c07b;
+  color: #d97706;
 }
 
 .string {
-  color: #98c379;
+  color: #059669;
 }
 
 .number {
-  color: #d19a66;
+  color: #ea580c;
 }
 
 .boolean {
-  color: #56b6c2;
+  color: #0891b2;
 }
 
 .scrollIndicator {
@@ -280,7 +254,7 @@
 .mouse {
   width: 24px;
   height: 40px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--color-gray-300);
   border-radius: 12px;
   position: relative;
 }

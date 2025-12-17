@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { ArrowRight, Code2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -11,12 +11,9 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.background}>
         <div className={styles.gradient}></div>
-        <div className={styles.grid}></div>
         <div className={styles.orb1}></div>
         <div className={styles.orb2}></div>
-        <div className={styles.floatingCode}>
-          <Code2 size={200} strokeWidth={0.5} />
-        </div>
+        <div className={styles.orb3}></div>
       </div>
 
       <div className={`container ${styles.container}`}>
