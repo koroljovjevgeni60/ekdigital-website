@@ -14,3 +14,4 @@ export default function TermsPage() {
   return <LegalPage namespace="termsPage" sections={sections} />;
 }
 
+

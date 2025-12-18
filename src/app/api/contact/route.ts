@@ -13,8 +13,9 @@ export async function POST(request: NextRequest) {
     }
 
     // Create transporter using local SMTP server (Poste.io)
+    // Use host.docker.internal for Docker or the server's IP
     const transporter = nodemailer.createTransport({
-      host: 'localhost',
+      host: process.env.SMTP_HOST || '172.17.0.1',
       port: 25,
       secure: false,
       tls: {

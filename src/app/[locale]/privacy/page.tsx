@@ -14,3 +14,4 @@ export default function PrivacyPage() {
   return <LegalPage namespace="privacyPage" sections={sections} />;
 }
 
+

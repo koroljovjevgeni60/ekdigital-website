@@ -13,3 +13,4 @@ export default function CookiesPage() {
   return <LegalPage namespace="cookiesPage" sections={sections} />;
 }
 
+
